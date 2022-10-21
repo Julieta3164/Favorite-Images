@@ -40,6 +40,7 @@
                 <x-button class="btn-login">
                     {{ __('Aceptar') }}
                 </x-button>
+                
                 <x-button class="btn-login">
                     <a class="A-btn" href="{{ url('/welcome') }}">Cancelar</a>
                 </x-button>

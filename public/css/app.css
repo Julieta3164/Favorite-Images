@@ -72,6 +72,85 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.contem-login {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.contem-login .login-F {
+  padding: 2%;
+  background: #98C4C5;
+  width: 50%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contem-login .login-F .Login {
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 50px;
+}
+.contem-login .login-F .Login .label-login {
+  padding: 1%;
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: right;
+}
+.contem-login .login-F .Login .input-login {
+  width: 40%;
+  height: 32px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px #3B7B24 solid;
+  padding: 2%;
+}
+.contem-login .login-F .Login .input-login1 {
+  width: 40%;
+  height: 22px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px #3B7B24 solid;
+}
+.contem-login .login-F .Login .btn-login1 {
+  width: 70%;
+  text-decoration: none;
+  background: #98C4C5;
+}
+.contem-login .login-F .Login .btn-login1 .btN-login {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #98C4C5;
+}
+.contem-login .login-F .Login .btn-login {
+  text-decoration: none;
+  margin: 1%;
+  background: #B2DBA4;
+  width: 20%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px #3B7B24 solid;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contem-login .login-F .Login .btn-login .A-btn {
+  color: black;
+  text-decoration: none;
+}
+
 .title-principal {
   margin-top: 1%;
   margin-bottom: 1%;

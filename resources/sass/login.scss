@@ -1,0 +1,79 @@
+.contem-login{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    .login-F{
+        padding: 2%;
+        background: #98C4C5;
+        width: 50%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .Login{
+            margin: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80%;
+            height: 50px;
+            .label-login{
+                padding: 1%;
+                width: 40%;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                text-align: right;
+            }
+            .input-login{
+                width: 40%;
+                height: 32px;
+                border-top-left-radius:20px;
+                border-top-right-radius:20px;
+                border-bottom-left-radius:20px;
+                border-bottom-right-radius:20px;
+                border: 1px #3B7B24 solid;
+                padding: 2%;
+            }
+            .input-login1{
+                width: 40%;
+                height: 22px;
+                border-top-left-radius:20px;
+                border-top-right-radius:20px;
+                border-bottom-left-radius:20px;
+                border-bottom-right-radius:20px;
+                border: 1px #3B7B24 solid;
+            }
+            .btn-login1{
+                width: 70%;
+                text-decoration: none;
+                background: #98C4C5;
+                .btN-login{
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-family:Arial, Helvetica, sans-serif;
+                    background: #98C4C5;
+                }
+            }
+
+            .btn-login{
+                text-decoration: none;
+                margin: 1%;
+                background: #B2DBA4;
+                width: 20%;
+                border-top-left-radius:20px;
+                border-top-right-radius:20px;
+                border-bottom-left-radius:20px;
+                border-bottom-right-radius:20px;
+                border: 1px #3B7B24 solid;
+                font-size: 20px;
+                font-family:Arial, Helvetica, sans-serif;
+                .A-btn{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

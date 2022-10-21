@@ -30,11 +30,9 @@
 
             <div class="Login">
                 @if (Route::has('password.request'))
-                <x-button class="btn-login1">
                     <a class="A-btn" href="{{ route('password.request') }}">
                         {{ __('¿Olvidaste tu contraseña?') }}
                     </a>
-                </x-button>
                 @endif
             </div>
             

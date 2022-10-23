@@ -10,7 +10,7 @@
     </button>
 
     <button class="btn-new">
-        <a class="" href="">Agregar Nueva<i class="bi bi-plus-lg"></i></a>
+        <a class="" href="{{ url('/image/create') }}">Agregar Nueva<i class="bi bi-plus-lg"></i></a>
     </button>
 
     <form class="btn-CS" method="POST" action="{{ route('logout') }}">

@@ -15,6 +15,11 @@ class CreateImagesTable extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('users_id');
+            $table->string("title");
+            $table->string("url");
+            $table->boolean("favorite")->default(0);
+            $table->foreign('users_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

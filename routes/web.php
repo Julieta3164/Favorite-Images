@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Create;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Imagen;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +15,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {return view('dashboard');})->middleware(['auth'])->name('dashboard');
+Route::group(['middleware' => ['auth']], function (){
+
+    Route::get('/image/create', [Imagen::class, 'create'])->name('imagen.create');
+    Route::post('/image/create', [Imagen::class, 'save'])->name('imagen.save');
+    
+    Route::get('/image/edit/{id}', [Imagen::class, 'edit'])->name('imagen.edit');
+    Route::get('/dashboard', [Imagen::class, 'dashboard'])->name('dashboard');
+
+
+});
+
+
+
 require __DIR__.'/auth.php';
+

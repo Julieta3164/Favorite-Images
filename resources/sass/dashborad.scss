@@ -37,12 +37,17 @@
                 }
             }
             .keypad{
+                height: 100px;
                 display: flex;
                 justify-content: space-around;
+                .btn{
+                    background: #98C4C5;
+                }
                 .H-btn{
                     text-align: center;
                     color: black;
                     font-size: 30px;
+                    }
                 }
                 .T-btn{
                     text-align: center;
@@ -52,8 +57,8 @@
                 .P-btn{
                     text-align: center;
                     color: black;
+                    margin-top: 2%;
                     font-size: 30px;
-                }
             }
         }
     }

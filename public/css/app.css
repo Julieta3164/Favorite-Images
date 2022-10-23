@@ -340,22 +340,27 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .max .card .card-data .keypad {
+  height: 100px;
   display: flex;
   justify-content: space-around;
+}
+.max .card .card-data .keypad .btn {
+  background: #98C4C5;
 }
 .max .card .card-data .keypad .H-btn {
   text-align: center;
   color: black;
   font-size: 30px;
 }
-.max .card .card-data .keypad .T-btn {
+.max .card .card-data .T-btn {
   text-align: center;
   color: black;
   font-size: 30px;
 }
-.max .card .card-data .keypad .P-btn {
+.max .card .card-data .P-btn {
   text-align: center;
   color: black;
+  margin-top: 2%;
   font-size: 30px;
 }
 

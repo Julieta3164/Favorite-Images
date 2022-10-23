@@ -209,6 +209,151 @@
   text-decoration: none;
 }
 
+.nav {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4499999881);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav .btn-Fav {
+  width: 10%;
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px #3B7B24 solid;
+  background: #B2DBA4;
+}
+.nav .btn-Fav a {
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.nav .btn-Fav a .bi-heart-fill {
+  margin-left: 5%;
+  font-size: 20px;
+}
+.nav .btn-new {
+  width: 10%;
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px #3B7B24 solid;
+  background: #B2DBA4;
+}
+.nav .btn-new a {
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.nav .btn-new a .bi-plus-lg {
+  margin-left: 5%;
+  font-size: 20px;
+}
+.nav .btn-CS {
+  width: 10%;
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px #3B7B24 solid;
+  background: #B2DBA4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+.nav .btn-CS .btn-CS1 {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  width: 90%;
+  text-align: center;
+  font-size: 15px;
+}
+.nav .btn-CS .btn-CS1 .bi-x {
+  margin-left: 5%;
+  font-size: 20px;
+}
+.nav .nav-name {
+  width: 13%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .nav-name .bi-person-fill {
+  font-size: 30px;
+  margin-right: 5%;
+}
+.nav .nav-name .txt-name {
+  font-size: 25px;
+}
+
+.card {
+  margin-top: 2%;
+  width: 15%;
+  height: 400px;
+  background: #98C4C5;
+  display: flex;
+  align-items: center;
+}
+.card .Img-card {
+  width: 90%;
+  height: 250px;
+  margin: 2%;
+  margin-top: 5%;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4499999881);
+}
+.card .Img-card .img-D {
+  width: 100%;
+  height: 250px;
+}
+.card .Img-card .img-D img {
+  width: 100%;
+  height: 250px;
+}
+.card .card-data {
+  width: 90%;
+  height: 200px;
+}
+.card .card-data .titleCard {
+  height: 80px;
+}
+.card .card-data .titleCard .txtcard {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card .card-data .keypad {
+  display: flex;
+  justify-content: space-around;
+}
+.card .card-data .keypad .H-btn {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+.card .card-data .keypad .T-btn {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+.card .card-data .keypad .P-btn {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
 .title-principal {
   margin-top: 1%;
   margin-bottom: 1%;

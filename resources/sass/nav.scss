@@ -1,0 +1,91 @@
+.nav{
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.44999998807907104);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .btn-Fav{
+        width: 10%;
+        height: 40px;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+        border-bottom-left-radius:20px;
+        border-bottom-right-radius:20px;
+        border: 1px #3B7B24 solid;
+        background: #B2DBA4;
+        a{
+            font-weight: 500;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            .bi-heart-fill{
+                margin-left: 5%;
+                font-size: 20px;
+            }
+        }
+    }
+    .btn-new{
+        width: 10%;
+        height: 40px;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+        border-bottom-left-radius:20px;
+        border-bottom-right-radius:20px;
+        border: 1px #3B7B24 solid;
+        background: #B2DBA4;
+        a{
+            font-weight: 500;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            .bi-plus-lg{
+                margin-left: 5%;
+                font-size: 20px;
+            }
+        }
+    }
+    .btn-CS{
+        width: 10%;
+        height: 40px;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+        border-bottom-left-radius:20px;
+        border-bottom-right-radius:20px;
+        border: 1px #3B7B24 solid;
+        background: #B2DBA4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+        .btn-CS1{
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            width: 90%;
+            text-align: center;
+            font-size: 15px;
+            .bi-x{
+                margin-left: 5%;
+                font-size: 20px;
+            }
+        }
+    }
+    .nav-name{
+        width: 13%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .bi-person-fill{
+            font-size: 30px;
+            margin-right: 5%;
+        }
+        .txt-name{
+            font-size: 25px;
+
+        }
+    }
+
+    
+}

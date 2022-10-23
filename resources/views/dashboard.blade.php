@@ -1,17 +1,25 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+<x-head/>
+<x-header/>
+@include('layouts.navigation')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
-                </div>
+
+{{-- @foreach --}}
+    <div class="card">
+        <div class="Img-card">
+            <img src="{{ asset('img/cabecera.png') }}" class="img-D" alt="...">
+        </div>
+        <div class="card-data">
+            <div class="titleCard">
+                <h5 class="txtcard">Card title</h5>
+            </div>
+            <div class="keypad">
+                <a href="#" class="H-btn"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="T-btn"><i class="bi bi-trash3"></i></a>
+                <a href="#" class="P-btn"><i class="bi bi-pencil"></i></a>
             </div>
         </div>
     </div>
-</x-app-layout>
+{{-- @endforeach --}}
+
+
+

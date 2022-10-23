@@ -298,7 +298,12 @@
   font-size: 25px;
 }
 
-.card {
+.max {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.max .card {
   margin-top: 2%;
   width: 15%;
   height: 400px;
@@ -306,77 +311,83 @@
   display: flex;
   align-items: center;
 }
-.card .Img-card {
+.max .card .Img-card {
   width: 90%;
   height: 250px;
   margin: 2%;
   margin-top: 5%;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4499999881);
 }
-.card .Img-card .img-D {
+.max .card .Img-card .img-D {
   width: 100%;
   height: 250px;
 }
-.card .Img-card .img-D img {
+.max .card .Img-card .img-D img {
   width: 100%;
   height: 250px;
 }
-.card .card-data {
+.max .card .card-data {
   width: 90%;
   height: 200px;
 }
-.card .card-data .titleCard {
+.max .card .card-data .titleCard {
   height: 80px;
 }
-.card .card-data .titleCard .txtcard {
+.max .card .card-data .titleCard .txtcard {
   text-align: center;
   color: black;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.card .card-data .keypad {
+.max .card .card-data .keypad {
   display: flex;
   justify-content: space-around;
 }
-.card .card-data .keypad .H-btn {
+.max .card .card-data .keypad .H-btn {
   text-align: center;
   color: black;
   font-size: 30px;
 }
-.card .card-data .keypad .T-btn {
+.max .card .card-data .keypad .T-btn {
   text-align: center;
   color: black;
   font-size: 30px;
 }
-.card .card-data .keypad .P-btn {
+.max .card .card-data .keypad .P-btn {
   text-align: center;
   color: black;
   font-size: 30px;
 }
 
-.max {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.max .Conten {
+.Conten {
   display: flex;
   justify-content: center;
 }
-.max .Conten .Form {
+.Conten .Form {
   width: 70%;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.max .Conten .Imagen-Create {
-  height: 100px;
+.Conten .ImagenCreate2 {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Conten .ImagenCreate2 .img-input {
+  width: 40%;
+  height: 350px;
+}
+.Conten .Imagen-Create {
+  height: 0px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.max .Conten .Imagen-Create .the-input {
+.Conten .Imagen-Create .the-input {
   width: 40%;
   height: 30px;
   padding: 1%;
@@ -386,7 +397,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.max .Conten .Imagen-Create input[type=file] {
+.Conten .Imagen-Create input[type=file] {
   width: 50%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -394,14 +405,14 @@
   border-bottom-right-radius: 20px;
   border: 1px #3B7B24 solid;
 }
-.max .Conten .Imagen-Create .the-label {
+.Conten .Imagen-Create .the-label {
   width: 50%;
   text-align: end;
   font-weight: 500;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.max .Conten .Imagen-Create .btn-save {
+.Conten .Imagen-Create .btn-save {
   width: 10%;
   height: 30px;
   border: 1px #3B7B24 solid;
@@ -412,7 +423,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.max .Conten .Imagen-Create .btn-cancel {
+.Conten .Imagen-Create .btn-cancel {
   width: 10%;
   height: 30px;
   border: 1px #3B7B24 solid;
@@ -422,7 +433,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.max .Conten .Imagen-Create .btn-cancel a {
+.Conten .Imagen-Create .btn-cancel a {
   text-decoration: none;
   color: black;
 }

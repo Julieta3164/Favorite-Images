@@ -20,6 +20,10 @@ private Image $Image;
     return $this->Image->all()->sortByDesc("id");
     }
 
+    public function getFavs(){
+        return $this->Image->where("favorite",'1')->orderby("id")->get();
+    }
+
     public function saveImage(Request $request)
     {  
         $request->validate([     
@@ -35,35 +39,39 @@ private Image $Image;
         return $this->Image->save();    
     }
 
-    public function editImage(Request $request, $id){
+    public function getImage($id){
         return Image::find($id);
     }
-
-    public function updateImage(Request $request, $id)
+    public function updateImage(Request $request)
     {
         $request->validate([
-            'file' => 'required|mimes:jpg,png|max:2048',
-            'title'=> 'required',
-            'details'=> 'required',
-            'age'=> 'required',
-            'link' => 'required',
+            'file' => 'mimes:jpg,png|max:2048',
+            'title'=> 'required', 
         ]);
 
-        $fileName = time().'.'.$request->file->extension();
-        $request->file->move(public_path('storage'), $fileName);
-        // $url_file = Storage::url($fileName);
-        // $this->MiniGame = MiniGame::find($id);
-        // $this->MiniGame->title = $request->get('title');
-        // $this->MiniGame->details = $request->get('details');
-        // $this->MiniGame->age = $request->get('age');
-        // $this->MiniGame->link = $request->get('link');
-        // $this->MiniGame->image = $url_file;
-        // Alert::success('Actualizado', 'Este administrador ha sido actualizado con éxito');
-        return $this->Image->save(); 
+        $Image = $this->getImage($request->id);
+        if($request->file('file')) {
+            $fileName = time().'.'.$request->file->extension();
+            $request->file->move(public_path('storage'), $fileName);
+            $url_file = Storage::url($fileName);
+            $Image->url = $url_file;
+        }
+        $Image->title = $request->get('title');
+        
+        $Image->users_id = $request->user()->id;
+        return $Image->save(); 
     }
+
+    public function setFav(Request $request)
+    {
+        $Image = $this->getImage($request->id);
+        $Image->favorite = !((bool)$request->fav);
+        return $Image->save(); 
+    }
+
     public function destroyImage(Request $request)
     {
-        $Image = Image::find($request->id); 
+        $Image = $this->getImage($request->id);
         return $Image->delete();
     
     }

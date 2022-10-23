@@ -20,9 +20,12 @@
 
 
 <div class="Conten">
-    <form class="Form" action="">
-        <div class="Imagen-Create">
+    <form class="Form" action="{{route('imagen.edit', $image ?? '')}}" method="POST" enctype="multipart/form-data">
+        @csrf
+        @method('PUT')
 
+        <div class="ImagenCreate2">
+            <img class="img-input" src="{{$image->url}}"  alt="">
         </div>
 
         <div class="Imagen-Create">
@@ -30,16 +33,17 @@
         </div>
         
         <div class="Imagen-Create">
-            <x-label class="the-label" for="the-title" :value="__('Titulo de la imagen: ')" />
-            <x-input class="the-input" {{--type="text" name="link" :value="old()"--}} required /> 
+            <x-label class="the-label" for="title" :value="__('Titulo de la imagen: ')" />
+            <x-input class="the-input" type="text" name="title" :value="$image->title" required /> 
         </div>
 
         
 
         <div class="Imagen-Create">
-                <button class="btn-save">Guardar
-                    {{-- {{ __('Guardar') }} --}}
-                </button>
+
+            <button class="btn-save">
+                {{ __('Actualizar') }}
+            </button>
 
             <button class="btn-cancel">
                 <a href="{{ url('') }}">Cancelar</a>

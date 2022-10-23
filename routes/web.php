@@ -25,9 +25,15 @@ Route::group(['middleware' => ['auth']], function (){
     Route::post('/image/create', [Imagen::class, 'save'])->name('imagen.save');
     
     Route::get('/image/edit/{id}', [Imagen::class, 'edit'])->name('imagen.edit');
+    Route::put('/image/edit/{id}', [Imagen::class, 'update'])->name('imagen.update');
+
     Route::get('/dashboard', [Imagen::class, 'dashboard'])->name('dashboard');
 
+    Route::get('/favorite', [Imagen::class, 'favorite'])->name('favorite');
+
     Route::delete('/image', [Imagen::class, 'destroy'])->name('imagen.destroy');
+
+    Route::put('/image/fav/{id}', [Imagen::class, 'fav'])->name('imagen.fav');
 
 
 });

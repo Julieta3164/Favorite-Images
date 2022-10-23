@@ -6,7 +6,7 @@
     </div>
     
     <button class="btn-Fav">
-        <a class="" href="">Favoritas<i class="bi bi-heart-fill"></i></i></a>
+        <a class="" href="{{ url('/favorite') }}">Favoritas<i class="bi bi-heart-fill"></i></i></a>
     </button>
 
     <button class="btn-new">

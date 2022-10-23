@@ -24,7 +24,18 @@ class Imagen extends Controller
 
     public function edit(Request $request)
     {
-        return view('editImage');
+        $image = $this->repository->getImage($request->id);
+        return view('editImage')->with('image',$image);
+    }
+
+    function update(Request $request){
+        $image = $this->repository->updateImage($request);
+        return redirect('/dashboard');
+    }
+
+    function fav(Request $request){
+        $image = $this->repository->setFav($request);
+        return redirect('/dashboard');
     }
 
     public function dashboard(Request $request)
@@ -33,6 +44,11 @@ class Imagen extends Controller
         return view('dashboard')->with('images',$images);;
     }
 
+    public function favorite(Request $request)
+    {
+        $images = $this->repository->getFavs();
+        return view('favorite')->with('images',$images);;
+    } 
     public function destroy(Request $request)
     {
         $this->repository->destroyImage($request);

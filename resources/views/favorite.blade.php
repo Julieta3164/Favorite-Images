@@ -2,6 +2,12 @@
 <x-header/>
 @include('layouts.navigation')
 
+<div class="title-principal">
+    <h1 class="txt-principal">
+        Tus Imagenes Favoritas.
+    </h1>
+</div>
+
 <div class="max">
     @foreach($images ?? []  as $image)
         <div class="card">

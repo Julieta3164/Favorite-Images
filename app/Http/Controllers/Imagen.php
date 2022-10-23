@@ -32,4 +32,10 @@ class Imagen extends Controller
         $images = $this->repository->getAll();
         return view('dashboard')->with('images',$images);;
     }
+
+    public function destroy(Request $request)
+    {
+        $this->repository->destroyImage($request);
+        return redirect('/dashboard');
+    }
 }

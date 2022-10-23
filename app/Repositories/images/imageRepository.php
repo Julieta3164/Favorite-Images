@@ -61,11 +61,9 @@ private Image $Image;
         // Alert::success('Actualizado', 'Este administrador ha sido actualizado con éxito');
         return $this->Image->save(); 
     }
-
     public function destroyImage(Request $request)
     {
-        $Image= Image::find($request->id);
-        // Alert::warning('Eliminado', 'El Minijuego Ha sido Borrado');        
+        $Image = Image::find($request->id); 
         return $Image->delete();
     
     }

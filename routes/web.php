@@ -27,6 +27,8 @@ Route::group(['middleware' => ['auth']], function (){
     Route::get('/image/edit/{id}', [Imagen::class, 'edit'])->name('imagen.edit');
     Route::get('/dashboard', [Imagen::class, 'dashboard'])->name('dashboard');
 
+    Route::delete('/image', [Imagen::class, 'destroy'])->name('imagen.destroy');
+
 
 });
 
